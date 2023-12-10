@@ -1,2 +1,3 @@
 .pio
 doc/pdf/
+include/config.h

@@ -33,7 +33,7 @@
  * temporarily. When releasing the button again, the mute state will return to
  * its previous state.
  */
-//#define ENABLE_PUSH_TO_TALK
+#define ENABLE_PUSH_TO_TALK
 #define PTT_TRIGGER_DURATION 1000
 
 /*
@@ -47,8 +47,8 @@
  * Signal active PTT by showing a pulsing red or green light (depending on
  * mute state)
  */
-//#define PTT_EFFECT_PULSE
-#define PTT_EFFECT_PULSE_DURATION 1000
+#define PTT_EFFECT_PULSE
+#define PTT_EFFECT_PULSE_DURATION 1500
 
 /*
  * Hold to drop
@@ -58,7 +58,7 @@
  * signalled by a fading red or green light (depending on mute state) until the
  * call is dropped.
  */
-#define ENABLE_HOLD_TO_DROP
+//#define ENABLE_HOLD_TO_DROP
 #define HOLD_TO_DROP_DURATION 1000
 
 /*

@@ -31,11 +31,14 @@ Software:
 
 ### Installation
 
-* Clone this repository
-* Configure the firmware by editing `include/config.h` (see comments there for further description)
-* Install PlatformIO
-* `pio run -t upload`
-* Plug in the device
+* Install [PlatformIO](https://platform.io)
+* Clone this repository, `cd firmware/`
+* Configure firmware
+  * Generate your own config file: `cp include/config.h.example include/config.h`
+  * Edit `include/config.h` to suit your needs (see comments there for further description)
+* Flash firmware
+  * `pio run -t upload`
+  * Plug in the device within 60 seconds
 
 ### Usage
 
