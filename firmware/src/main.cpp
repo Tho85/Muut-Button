@@ -3,8 +3,6 @@
 Adafruit_NeoPixel leds(NUM_LEDS, RGB_LED_PIN, NEO_GRB + NEO_KHZ800);
 Bounce2::Button muteButton = Bounce2::Button();
 
-bool localMuteState = false;
-
 #ifdef ENABLE_PUSH_TO_TALK
 bool pttActive = false;
 bool lastPttActive = false;
@@ -51,8 +49,7 @@ void setup() {
 }
 
 void toggleMuteState() {
-  localMuteState = !localMuteState;
-  UsbMute.setMute(localMuteState);
+  UsbMute.setMute(!remoteMuteState);
 }
 
 void displayRainbow() {
