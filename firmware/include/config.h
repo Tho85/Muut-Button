@@ -1,0 +1,81 @@
+#ifndef __config_h__
+#define __config_h__
+
+/*
+ * Number of LEDs on your NeoPixel Ring
+ */
+#define NUM_LEDS 12
+
+/*
+ * RGB LED brightness (0 = off, 255 = maximum brightness)
+ */
+#define RGB_LED_BRIGHTNESS 70
+
+/*
+ * Pin definition
+ *
+ * NeoPixel Ring only seems to work on PB0
+ */
+#define RGB_LED_PIN PB0
+#define BUILTIN_LED_PIN PB1
+#define MUTE_BUTTON_PIN PB2
+
+/*
+ * Signal mute state by using internal LED of Digispark board
+ */
+//#define ENABLE_BUILTIN_LED
+
+/*
+ * Push to talk (PTT)
+ *
+ * When enabled, pushing and holding the button for longer than
+ * PTT_TRIGGER_DURATION milliseconds will switch to push-to-talk mode
+ * temporarily. When releasing the button again, the mute state will return to
+ * its previous state.
+ */
+//#define ENABLE_PUSH_TO_TALK
+#define PTT_TRIGGER_DURATION 1000
+
+/*
+ * Signal active PTT by showing a rotating red or green light (depending on
+ * mute state)
+ */
+//#define PTT_EFFECT_ROTATING_LIGHT
+#define PTT_EFFECT_ROTATING_LIGHT_DURATION 1000
+
+/*
+ * Signal active PTT by showing a pulsing red or green light (depending on
+ * mute state)
+ */
+//#define PTT_EFFECT_PULSE
+#define PTT_EFFECT_PULSE_DURATION 1000
+
+/*
+ * Hold to drop
+ *
+ * When enabled, pushing and holding the button for longer than
+ * HOLD_TO_DROP_DURATION milliseconds will hang up the active call. This is
+ * signalled by a fading red or green light (depending on mute state) until the
+ * call is dropped.
+ */
+#define ENABLE_HOLD_TO_DROP
+#define HOLD_TO_DROP_DURATION 1000
+
+/*
+ * Easter egg: Use rainbow instead of green light when unmuted.
+ *
+ * To activate: Hold down button when plugging in USB cable, and wait until the
+ * bootloader has finished (~ 7-8 seconds)
+ */
+#define ENABLE_UNMUTED_RAINBOW
+#define RAINBOW_DURATION 5000
+
+/*
+ * Easter egg: Use rainbow in idle state
+ *
+ * To activate: Hold down button when plugging in USB cable, and wait until the
+ * bootloader has finished (~ 7-8 seconds)
+ */
+//#define ENABLE_IDLE_RAINBOW
+
+#endif // __config_h__
