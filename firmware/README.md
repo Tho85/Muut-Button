@@ -33,6 +33,9 @@ Software:
 * Flash firmware
   * `pio run -t upload`
   * Plug in the device within 60 seconds
+* Make sure user has read/write access to the raw USB device:
+  * Either drop [`udev rules file`](doc/98-muut.rules) to `/etc/udev/rules.d/`, issue a `sudo udevadm control --reload-rules` and re-plug device (recommended)
+  * Or try manually: `sudo chmod 0666 /dev/hidrawX`
 
 ### Usage
 
