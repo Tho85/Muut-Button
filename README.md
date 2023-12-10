@@ -2,6 +2,8 @@
 
 A hardware button to control the mute state in video conferencing calls
 
+![demo](images/demo.gif)
+
 ## Overview
 
 This project consists of the following parts:
