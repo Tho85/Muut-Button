@@ -129,8 +129,8 @@ void loop() {
 #endif
 
 #ifdef PTT_EFFECT_PULSE
-    int brightnessTwo = (millis() / (PTT_EFFECT_PULSE_DURATION * 2 / 512)) % 512;
-    int brightness = min(brightnessTwo, 511 - brightnessTwo);
+    int brightnessTwo = ((muteButton.currentDuration() * 512) / PTT_EFFECT_PULSE_DURATION) % 512;
+    int brightness = (min(brightnessTwo, 511 - brightnessTwo) * RGB_LED_BRIGHTNESS) / 255;
     // There is a calculation error in the two lines above, leading to a visible
     // black flash, because brightness is obviously > 255. Manually limit to
     // interval between 0 and 255.
