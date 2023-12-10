@@ -2,12 +2,6 @@
 
 A firmware for ATtiny85 microcontrollers that can mute/unmute and hang up calls in video conferencing sofware.
 
-## Overview
-
-This firmware emulates a USB HID Telephony device with buttons and status LEDs. When attaching a hardware button, it can be used to mute/unmute and hang up calls in video conferencing software. The built-in LED (or an optional RGB LED ring) visualizes the current mute/unmute/call state.
-
-The firmware presents itself as a generic HID device to the host PC and can be used in video conferencing software like Google Meet without the need for additional software, extensions etc.
-
 ## Features
 
 The firmware emulates the following usages according to the USB HID specification (see [HID Usage Tables](https://usb.org/sites/default/files/hut1_4.pdf)):
