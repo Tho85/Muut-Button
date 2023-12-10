@@ -2,6 +2,8 @@
 
 A hardware button to control the mute state in video conferencing calls.
 
+![Muut Button image](images/red.jpg)
+
 ## Overview
 
 The device emulates a USB HID Telephony device with buttons and status LEDs. It can be used to mute/unmute and hang up calls in video conferencing software. The built-in LED (or an optional RGB LED ring) visualizes the current mute/unmute/call state. No additional software or browser extensions required.
@@ -19,7 +21,7 @@ Successfully tested with Google Meet in Google Chrome. Firefox does not work bec
 
 ## Demo
 
-![demo](images/demo.gif)
+![Muut Button demo](images/demo.gif)
 
 ## Requirements
 
