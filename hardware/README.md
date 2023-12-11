@@ -17,7 +17,7 @@
 
 ## Assembly instructions
 
-See [docs/assembly.md](docs/assembly.md).
+See [doc/assembly.md](doc/assembly.md)
 
 ## License
 

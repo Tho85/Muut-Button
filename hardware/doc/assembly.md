@@ -40,6 +40,10 @@ Printing tips for the **stand**:
 * Yes, they are tiny, so don't resign...
 * Stick the MX switch through the stand's top
 
+| ![assembly 2](../../images/assembly2.jpg) |
+|:--:| 
+| *Step 3* |
+
 ---
 
 ### 4. Solder component wires to the ATtiny85 board
@@ -62,6 +66,10 @@ Printing tips for the **stand**:
 
 * Melt down the two threaded inserts into the base
 * Attach the ATtiny85 development board with two M2x4 screws
+
+| ![assembly 1](../../images/assembly1.jpg) |
+|:--:| 
+| *Step 5* |
 
 ---
 
