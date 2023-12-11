@@ -18,6 +18,11 @@ The firmware emulates the following usages according to the USB HID specificatio
 
 ### Prerequisites
 
+Hardware:
+
+* Development board: [ATtiny85 Micro USB Development Board](https://www.aliexpress.com/item/3256805913780170.html)
+* Or any other ATtiny85 development board where USB communication is handled by the ATtiny85 itself, and not by some additional USB-to-UART controller (CP2102, CH340, etc.)
+
 Software:
 
 * [PlatformIO](https://platform.io)
@@ -43,6 +48,14 @@ Software:
 * Configure video conferencing software to use the device for call controls:
   * [Google Meet](https://support.google.com/meet/answer/12562325?hl=en)
 
+### Advanced usage
+
+If your development board does not already come pre-flashed with it, I highly recommend the [micronucleus bootloader](https://github.com/micronucleus/micronucleus). It adds support for firmware flashing without a dedicated programmer.
+
+By default, the bootloader always starts and waits for up to 6 seconds after plugging in the device before starting the actual firmware. You can improve this behavior by flashing an optimized version of micronucleus as provided in the [`doc/micronucleus`](doc/micronucleus/) folder. The modified configuration only starts into bootloader mode if the button is pressed while plugging in the device.
+
+Please check the [micronucleus repository](https://github.com/micronucleus/micronucleus) for more information on how to flash the optimized bootloader. Hint: micronucleus can update itself via their provided CLI tool.
+
 ## License
 
 See [LICENSE.md](LICENSE.md)
@@ -54,3 +67,5 @@ See [LICENSE.md](LICENSE.md)
 ## Acknowledgments
 
 * Inspired by [Digispark Keyboard](https://github.com/digistump/DigisparkArduinoIntegration/tree/master/libraries/DigisparkKeyboard)
+* Powered by the [micronucleus bootloader](https://github.com/micronucleus/micronucleus)
+* Only possible thanks to [V-USB](https://github.com/obdev/v-usb)

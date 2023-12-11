@@ -31,6 +31,7 @@ Successfully tested with Google Meet in Google Chrome. Firefox does not work bec
 * Switch: e.g. [CHERRY MX Brown](https://www.cherrymx.de/cherry-mx/mx-original/mx-brown.html)
 * RGB LED ring (optional): [Adafruit NeoPixel Ring - 12x](https://www.adafruit.com/product/1643)
 * Case + accessories: [3D printed case](case/), see [`case/`](case/) folder
+* Some short wires
 
 ### Software
 
