@@ -30,7 +30,7 @@ Successfully tested with Google Meet in Google Chrome. Firefox does not work bec
 * Development board: [ATtiny85 Micro USB Development Board](https://www.aliexpress.com/item/3256805913780170.html)
 * Switch: e.g. [CHERRY MX Brown](https://www.cherrymx.de/cherry-mx/mx-original/mx-brown.html)
 * RGB LED ring (optional): [Adafruit NeoPixel Ring - 12x](https://www.adafruit.com/product/1643)
-* Case + accessories: [3D printed case](case/), see [`case/`](case/) folder
+* Case + accessories: [3D printed case](hardware/), see [`hardware/`](hardware/) folder
 * Some short wires
 
 ### Software
@@ -40,7 +40,7 @@ Successfully tested with Google Meet in Google Chrome. Firefox does not work bec
 ## License
 
 * Firmware: See [`firmware/LICENSE.md`](firmware/LICENSE.md)
-* Case: See [`case/LICENSE.md`](case/LICENSE.md)
+* Hardware: See [`hardware/LICENSE.md`](hardware/LICENSE.md)
 
 ## Authors
 

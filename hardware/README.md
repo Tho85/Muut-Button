@@ -7,10 +7,17 @@
 
 ## Requirements
 
-* A 3D printer
+* Electronics components: See [overall README.md](../README.md)
+* A 3D printer and filament
 * 2x [M2 threaded inserts](https://turmberg3d.de/products/gewindeeinsatze-fur-kunststoffteile?variant=39376894001347)
 * 2x M2x4 screws
+* Five short wires (~ 5 cm)
+* Some hot glue
 * Optional: Foam rubber pad, round
+
+## Assembly instructions
+
+See [docs/assembly.md](docs/assembly.md).
 
 ## License
 
